@@ -14,6 +14,7 @@ description: Updates documentation, context, commits changes, and runs a retrosp
     -   Stage all changes: `git add .`
     -   Generate a descriptive commit message based on the changes.
     -   Commit: `git commit -m "your message"`
+    -   **Push**: Check if a remote is configured (`git remote -v`). If yes, push to the current branch (`git push`).
 
 4.  **Run Retrospective**:
     -   Execute the `/retrospective` workflow to analyze the session and update global rules.

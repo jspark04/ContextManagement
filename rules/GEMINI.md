@@ -54,3 +54,10 @@
     *   **Tagging**: Always tag images with both a unique timestamp/version AND `latest`.
     *   **Automation**: Create automation scripts (e.g., `push_image.ps1`) to handle the build/tag/push process.
     *   **PowerShell**: Use `-ExecutionPolicy Bypass` when running `.ps1` scripts from the agent to avoid permission errors.
+
+## 📚 Frameworks & Libraries
+*   **Firebase Genkit**:
+    *   **Versioning**: Pin `zod` and `zod-to-json-schema` in `package.json` overrides to ensure compatibility (Genkit 1.28.0+ often requires standard schema support).
+    *   **Configuration**: Use `genkit()` from the `genkit` package for initialization, not `configureGenkit` from `@genkit-ai/core`.
+    *   **Flows & Tools**: Use `ai.defineFlow` and `ai.defineTool` on the initialized instance.
+    *   **Generation**: `ai.generate` returns an object where `.output` is a getter (nullable), not a function.
