@@ -24,20 +24,9 @@ description: Guidelines and instructions for safely updating the project's 'cont
     -   Log "Key Decisions" when a major trade-off is made (e.g., "Switched to PostgreSQL for JSONB support").
 
 ## 4. Updating `tasks.md` (Concurrency Protocol)
--   **When**: Starting work, finishing work, or planning new work.
--   **Protocol**:
-    1.  **Check Locks**: Read "Current Active Groups". Is another agent working on your target group?
-        -   *If YES*: **STOP**. Do not touch files in that group. Work on something else or wait.
-        -   *If NO*: Proceed.
-    2.  **Locking (Starting Work)**:
-        -   Mark the group in "Current Active Groups":
-            -   `[ ] Group A` -> `[x] Group A (Agent: [MyName/Role])`
-    3.  **Unlocking (Finishing/Pausing)**:
-        -   Unmark the group:
-            -   `[x] Group A ...` -> `[ ] Group A`
-    4.  **Adding Tasks**:
-        -   **New Group**: If tasks involve a *distinct* set of files, create a NEW group.
-        -   **Existing Group**: If tasks involve files *already* in a group, add them there to ensure serial execution.
+-   **Critical**: For all task management actions (locking groups, picking tasks, completing items), **YOU MUST USE THE `manage_project_tasks` SKILL**.
+-   **Reason**: That skill contains the strict safety protocols (lock verification, semaphore logic) to prevent agent collisions.
+-   **This Skill**: Use this skill only for structural updates to `tasks.md` (e.g. re-organizing sections) that don't involve active work management.
 
 # Constraints
 -   **Path**: Always target `context/` configuration files in the root.

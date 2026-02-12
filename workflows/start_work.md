@@ -11,11 +11,15 @@ description: Analyzes the project's task list, picks the next best task group, a
 
 2.  **Analyze Task Context**:
     -   Read `context/tasks.md`.
-    -   **Check Active Locks**: Look at `**Current Active Groups**`. Identify which groups are *already* being worked on (locked).
-    -   **Identify Candidates**: Look for **Task Groups** that are:
-        -   NOT currently locked (unchecked in Active Context or not listed).
-        -   Have incomplete tasks (`[ ]`).
-    -   **Prioritize**: Pick the group that appears most critical (e.g., "Core Features", "Setup", or the first sequential group).
+    -   **Check User Input**: Did the user specify a topic or group (e.g., "work on auth")?
+        -   **If YES**: Look for a matching Task Group. Check if it's unlocked.
+            -   *If Locked*: Warn user ("Group X is locked by Agent Y"). Ask to proceed anyway (force) or pick another.
+            -   *If Unlocked*: Select this group.
+        -   **If NO**: Follow standard prioritization (below).
+    -   **Standard Prioritization**:
+        -   **Check Active Locks**: Look at `**Current Active Groups**`.
+        -   **Identify Candidates**: Unlocked groups with incomplete tasks.
+        -   **Prioritize**: Critical path or first sequential group.
 
 3.  **Propose Next Step**:
     -   **Selected Group**: [Name of the group you picked]

@@ -22,6 +22,7 @@ We use `context/tasks.md` as a semaphore system to allow multiple agents to work
     1.  Verify the group is NOT currently locked.
     2.  Add a line to `**Current Active Groups**`:
         `[x] Group Name (Agent: Me)`
+    3.  **VERIFY**: Wait a moment, then read the file again. Verify YOUR lock is present and no other locks exist for the same group. If your lock is missing or overwritten, BACK OFF.
 -   **Why**: This signals to other agents "Hands off/Files busy".
 
 ### C. EXECUTE
