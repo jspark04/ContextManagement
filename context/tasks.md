@@ -3,7 +3,7 @@
 ## Active Context
 <!-- Agents: update this signal when you start a group. -->
 **Current Active Groups**:
--   [x] Group A (Agent: Antigravity)
+-   [ ] Group A (Agent: Antigravity)
 
 ## Task Groups
 <!-- Groups are sets of tasks that can be done INDEPENDENTLY of other groups (minimized file overlap). -->
