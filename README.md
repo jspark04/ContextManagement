@@ -38,6 +38,13 @@ Apply repository configurations to your local environment:
 Copy-Item "./workflows/*" "../.gemini/antigravity/global_workflows/" -Recurse -Force
 ```
 
+### Automation
+
+A workspace workflow is available to sync global configurations to this repository:
+
+1.  Run the workflow: `@[/sync_global_to_repo]` (requires agent support).
+2.  Or manually execute the steps defined in `.agent/workflows/sync_global_to_repo.md`.
+
 ## 🤝 Contributing
 
 1.  **Rules**: Updates to `GEMINI.md` affect all agent interactions. Test changes in a single session before committing.
