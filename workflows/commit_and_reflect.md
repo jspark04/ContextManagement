@@ -7,7 +7,7 @@ description: Updates documentation, context, commits changes, and runs a retrosp
     -   If it exists, analyze recent changes and update the "Recent Changes" or relevant sections.
 
 2.  **Update Context**:
-    -   **Execute Skill**: Read and follow the instructions in `C:\Users\johnp\.gemini\antigravity\skills\update_context\SKILL.md`.
+    -   **Execute Skill**: Read and follow the instructions in `../skills/update_context/SKILL.md`.
     -   **Goal**: Ensure `product.md`, `architecture.md`, and `tasks.md` are up to date and any active task locks are released.
 
 3.  **Commit Changes**:

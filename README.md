@@ -9,7 +9,7 @@ This repository serves as the source of truth for your AI agent's "brain," inclu
 | Directory | Description |
 | :--- | :--- |
 | **`rules/`** | Contains global behavioral rules (e.g., `GEMINI.md`) that guide agent actions and communication style. |
-| **`skills/`** | Repository of agent capabilities (e.g., `create_new_skill`, `update_context`) that extend functionality. |
+| **`skills/`** | Repository of agent capabilities that extend functionality. Currently includes: `create_resilient_db_client`, `setup_async_alembic`, `setup_langgraph_persistence`, `setup_llm_factory`, and more. |
 | **`workflows/`** | Standard operating procedures and checklists (e.g., `retrospective.md`, `initialize_context.md`) for complex tasks. |
 | **`context/`** | Project-specific context files (`product.md`, `architecture.md`, `tasks.md`) describing this repository itself. |
 

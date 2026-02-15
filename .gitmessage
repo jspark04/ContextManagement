@@ -1,0 +1,8 @@
+[
+  {
+    "type": "feat",
+    "scope": "global",
+    "description": "sync global configuration from .gemini to repo",
+    "body": "Synced latest rules (GEMINI.md), workflows (commit_and_reflect), and added new skills: create_resilient_db_client, force_kill_port, setup_async_alembic, setup_langgraph_persistence, setup_llm_factory, setup_python_windows_dev, setup_sse_streaming, write_commit_message."
+  }
+]
