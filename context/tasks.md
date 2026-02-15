@@ -11,5 +11,5 @@
 ### Group A: Maintenance & Sync
 -   **Files Involved**: `rules/`, `skills/`, `workflows/`, `scripts/`
 -   [x] Create a synchronization script (backup/restore)
--   [ ] specific documentation for each skill if missing
+-   [x] specific documentation for each skill if missing
 -   [x] Automate the backup process
